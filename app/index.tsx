@@ -131,7 +131,7 @@ export default function App() {
 
 const Tela = styled(SafeAreaView)`
   flex: 1;
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/896/117/227/5bd164800b089-wallpaper-preview.jpg);
+  background-color: #000;
   padding: 26px;
 `;
 
