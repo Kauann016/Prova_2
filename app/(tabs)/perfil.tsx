@@ -127,7 +127,7 @@ export default function App() {
 
 const Tela = styled(SafeAreaView)`
   flex: 1;
-  background-image: url(https://i.pinimg.com/736x/19/2b/5e/192b5ea67aa0dc0df792315d88406ab3.jpg);
+  background-color: #0a0000;
   padding: 26px;
 `;
 
