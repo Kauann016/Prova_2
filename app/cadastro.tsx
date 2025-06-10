@@ -98,8 +98,8 @@ export default function Cadastro() {
           <ScrollView
             contentContainerStyle={{ flexGrow: 1}}
             keyboardShouldPersistTaps="handled">
-              <Title texto={"Cadastre-se 👍"} flag={true} />
-              <Title texto={"Faça uma conta com a gente ❤"} flag={false} />
+              <Title texto={"Cadastre-se"} flag={true} />
+              <Title texto={"Faça uma conta conosco! "} flag={false} />
               <ContainerCampoTexto >
                 <View>
                   <ContainerTextInput error={erroEmail}>
@@ -128,11 +128,11 @@ export default function Cadastro() {
                     </Pressable>
                   </ContainerTextInput>
                   {erroSenha && <TextErrorHint>Senha inválida</TextErrorHint>}
-                </View>
+                </View>S
                 <View>
                   <ContainerTextInput error={erroConfSenha}>
                     <InputTexto
-                      placeholder="Confirme a senha..."
+                      placeholder="Confirme sua senha..."
                       onChangeText={(text) => setConfSenha(text)}
                       secureTextEntry={senhaVisivel}
                     />
@@ -144,7 +144,7 @@ export default function Cadastro() {
                       />
                     </Pressable>
                   </ContainerTextInput>
-                  {erroConfSenha && <TextErrorHint>Senha diferentes!</TextErrorHint>}
+                  {erroConfSenha && <TextErrorHint>As senhas não coincidem. Tente novamente!</TextErrorHint>}
                 </View>
               </ContainerCampoTexto>
               {invalidLogin && (
